@@ -1,6 +1,8 @@
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
+import MagicButton from './ui/MagicButton'
+import { FaLocationArrow } from "react-icons/fa6";
 // 'rafce' shortcut for react hero template (only accessible with es7+ extension installed)
 
 const Hero = () => {
@@ -27,8 +29,22 @@ const Hero = () => {
                                     text-blue-100 max-w-80'>Dynamic Web Magic with Next.js</h2>
                     <TextGenerateEffect 
                         className='text-center text-[40px] md:text-5xl lg:text-6xl'
-                        words='Transforming Concepts into Seamless Experiences'
+                        words='Transforming Concepts into Seamless User Experiences'
                     />
+
+                    <p className='text-center md:tracking-wider mb-4 text-small 
+                                  md:text-lg lg:text-2xl'>
+                        Hi, I&apos;m Adrian, a Next.js Developer based in Croatia.
+                    </p>
+
+                    <a href="#about">
+                        <MagicButton
+                            title='Show my work'
+                            icon={<FaLocationArrow />}
+                            position='right'
+
+                        />
+                    </a>
                 </div>
             </div>
         </div>
